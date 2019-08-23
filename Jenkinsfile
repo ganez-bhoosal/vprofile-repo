@@ -7,7 +7,7 @@ pipeline {
     stages{
         stage('Build'){
             steps {
-                sh 'export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java; mvn install'
+                sh 'mvn install'
             }
             post {
                 success {
